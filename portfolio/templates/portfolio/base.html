@@ -9,7 +9,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Portfolio</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+    {% include 'portfolio/navbar.html' %}
     {% block content %}{% endblock content %}
     
 </body>
