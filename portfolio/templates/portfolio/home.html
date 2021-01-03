@@ -4,12 +4,15 @@
 
     <div class="container-fluid">
       <div class="row">
-        <nav class="col-sm-3 col-4" id="myScrollspy">
+        <nav class="col-sm-3 col-4 bg-success" id="myScrollspy">
             <div class="card" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="...">
+                {% for profile in profiles %}
+                <img src="{{ profile.image.url }}" class="card-img-top rounded-circle" alt="...">
+
+                {% endfor %}
                 <div class="card-body">
                   <h4 class="card-title">COLLINS KIPKOECH</h4>
-                  <h5>FULL-STACK DEVELOPER</h5>
+                  <h6></h6>FULL-STACK DEVELOPER</h6>
 
                   
                 </div>
@@ -25,15 +28,15 @@
               <a class="nav-link active" href="#section1">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section3">CV</a>
+              <a class="nav-link" href="#section3">Contacts</a>
             </li>
             
             
           </ul>
         </nav>
-        <div class="col-sm-9 col-8">
+        <div class="col-sm-9 col-8 fixed">
           <div id="section1" class="bg-info">    
-            <h1>Projects</h1>
+            <h1 class="ml-3">Projects</h1>
             {% for project in projects %}
             <div class="card text-center">
               <div class="card-header">
@@ -52,28 +55,13 @@
             
           </div>
           <div id="section2" class="bg-info"> 
-            <h1>Section 2</h1>
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a 
-                piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard 
-                McClintock, a Latin professor at 
-                Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, 
-                consectetur, from a Lorem Ipsum passage, and going through the cites of the word in 
-                classical literature, discovered the undoubtable source. Lorem Ipsum comes from 
-                sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of 
-                Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the 
-                theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
-                 "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                The standard chunk of Lorem Ipsum used since the 1500s is 
-                reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus 
-                Bonorum et Malorum" by Cicero are also reproduced in their exact original form, 
-                accompanied by English versions from the 1914 translation by H. Rackham.</p>
-            
+            <h1>Contact Me</h1>
+            <p>Email: collinskipkoech95@gmauil.com</p>
+            <p>Phone: 0715023823</p>
           </div>        
           <div id="section3" class="bg-info">         
-            <h1>Section 3</h1>
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+            <h1>CV</h1>
+            
             
           </div>
           
